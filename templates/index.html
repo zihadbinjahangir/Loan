@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Loan</title>
+  </head>
+
+  <body>
+    
+    <div class="container">
+        <h2>Welcome to Loan prediction</h2>
+        
+        <form action="/" method="POST">
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Gender</label>
+            <select class="form-control" name="gender" id="gender">
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Marride</label>
+            <select class="form-control"name="marride" id="marride">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Dependents</label>
+            <select class="form-control" name="dependents" id="dependents">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3+</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Education</label>
+            <select class="form-control"name="education1" id="education1">
+              <option>Graduate</option>
+              <option>Not Graduate</option>>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Self_Employed</label>
+            <select class="form-control"name="self_Employed" id="self_Employed">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="applicantIncome">ApplicantIncome</label>
+            <input type="text" class="form-control"name="applicantIncome" id="applicantIncome" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="coapplicantIncome">Co ApplicantIncome</label>
+            <input type="text" class="form-control"name="coapplicantIncome" id="coapplicantIncome" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="loanAmount">LoanAmount</label>
+            <input type="text" class="form-control"name="loanAmount" id="loanAmount" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="loan_Amount_Term">Loan_Amount_Term</label>
+            <input type="text" class="form-control"name="loan_Amount_Term" id="loan_Amount_Term" aria-describedby="emailHelp">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Credit_History</label>
+            <select class="form-control"name="credit_History" id="credit_History">
+              <option>1</option>
+              <option>0</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Property_Area</label>
+            <select class="form-control"name="property_Area" id="property_Area">
+              <option>Urban</option>
+              <option>Semiurban</option>
+              <option>Rural</option>
+            </select>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+
+            {% if x != "" %}
+            <h4>Result: {{x}}</h4>
+            {% endif %}
+        </form>
+
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  </body>
+</html>
